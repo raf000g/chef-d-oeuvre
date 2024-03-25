@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image sur un bouton</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Choisir une matière</h1>
+        <div id="categoryList">
+            <button onclick="startQuiz('science')">
+            <img src="image/Sans titre.png" width="50%" height="100%">
+            </button>
+            <button onclick="startQuiz('history')">
+                <img src="image/La-Liberte-guidant-le-peuple-–-Eugene-Delacroix-1830-e1652197478920.jpg" width="50%" height="100%">
+            </button>
+            <button onclick="startQuiz('professionnel')">
+                <img src="image/serveur-1.jpg" width="50%" height="100%">
+                </button>
+                <button onclick="startQuiz('geographie')">
+                    <img src="image/placez-des-symboles-de-g%C3%A9ographie-%C3%A9quipements-pour-banni%C3%A8res-web-croquis-d-ensemble-cru-gribouillez-le-type-%C3%A9ducation-136641079.webp" width="50%" height="100%">
+                    </button>
+            <button onclick="startQuiz('math')">
+                        <img src="image/11664-629a0a557b70b-fond-tableau-mathematique-realiste-23-2148154055-1-jpg.jpg" width="50%" height="100%">
+                        </button> 
+            <button onclick="startQuiz('francais')">
+                        <img src="image/2295249-adobestock-227810706-1-766x438.jpg" width="50%" height="100%">
+                        </button>                          
+            <!-- Ajoutez d'autres catégories ici -->
+        </div>
+
+        <div id="quizContainer" style="display: none;">
+            <h2 id="quizCategory"></h2>
+            <div id="questionContainer"></div>
+            <button onclick="nextQuestion()">Suivant</button>
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
